@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+* {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 20px;
+    background: #000000;
+    color: white;
+
+    }
+
+#board, .boardInfo {
+    max-width: 500px;
+    
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 100px auto;
+    
+    
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: auto;
+}
+
+#start {
+
+    padding: 0.5em 2em 0.5em 2em;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #fff6fb;
+    letter-spacing: 0.1em;
+    text-shadow: -2px 2px 5px #30fd6e;
+    background-color: transparent;
+    border: 2px solid #e2d1db;
+    box-shadow: 0 0 0px 1px #12f112,
+      0 0 10px 2px #199415,
+      inset 0 0 0px 1px #12f130,
+      inset 0 0 10px 2px #3dc713;
+    transition: 100ms;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 0px 1px #46f112,
+      0 0 10px 2px #FD3084,
+      inset 0 0 0px 1px #F11271,
+      inset 0 0 30px 2px #FD3084;
+    text-shadow: 0 0 10px #FD3084;
+    transform: translateY(-5px);
+  }
+  
+  .btn:active {
+    box-shadow: 0 0 0px 1px #F11271,
+      0 0 25px 2px #FD3084,
+      inset 0 0 0px 1px #F11271,
+      inset 0 0 30px 2px #FD3084;
+    transform: translateY(1px);
+  }
+
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #ece359;
+}
+
+.snakeSquare {
+    background-color: #2ebd3a;
+    border: none;
+  
+ 
+
+}
+
+
+
+.foodSquare {
+    background-color: #eb2626;
+   
+}
